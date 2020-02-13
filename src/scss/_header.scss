@@ -1,0 +1,40 @@
+.header{
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,.85)) ,url(../assets/img/bg1.jpg) no-repeat center center/cover;
+  position: relative;
+  &__box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+.navigation{
+  margin: 0 auto;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__img{
+    display: inline-block;
+    width: 150px;
+  }
+  &__list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  &__item{
+    &:not(:last-child){
+      margin-right: 2rem;
+    }
+  }
+  &__link{
+    display: block;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: $white-color;
+  }
+}
