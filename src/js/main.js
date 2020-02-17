@@ -1,22 +1,16 @@
-//Owl carousel
+const tabs = document.querySelectorAll('[data-tab]');
+const tabContents = document.querySelectorAll('[data-tab-content]');
 
-$('.owl-carousel').owlCarousel({
-  // rtl: true,
-  loop: true,
-  margin: 20,
-  nav: true,
-  // autoplay: true,
-  // autoplayTimeout: 3000,
-  // autoplayHoverPause: true,
-  responsive: {
-    0: {
-      items: 1
-    },
-    300: {
-      items: 2
-    },
-    1000: {
-      items: 3
-    }
-  }
-});
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const target = document.querySelector(tab.dataset.tab)
+    tabContents.forEach(tabContent => {
+      tabContent.classList.remove('active')
+    })
+    tabs.forEach(tab => {
+      tab.classList.remove('active')
+    })
+    tab.classList.add('active')
+    target.classList.add('active')
+  })
+})
