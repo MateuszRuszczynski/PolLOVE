@@ -42,7 +42,9 @@
       "@babel/preset-env"
     ]
   },
-  "dependencies": {},
+  "dependencies": {
+    "owl.carousel": "^2.3.4"
+  },
   "browserslist": [
     "last 2 version",
     "> 2%"

@@ -1,12 +1,27 @@
+
 .header{
   height: 100vh;
-  background: linear-gradient(rgba(0,0,0,.85)) ,url(../assets/img/bg1.jpg) no-repeat center center/cover;
+  background: url(../assets/img/bg1.jpg) no-repeat center center/cover;
   position: relative;
+  color: $white-color;
+  animation: changePhoto 12s ease-in-out infinite alternate-reverse forwards;
   &__box{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  &__heading{
+    font-size: 3rem;
+    &--special{
+      color: $red-color;
+    }
+  }
+  &__text{
+    font-size: 1.4rem;
+    color: $gray-color;
+    font-style: italic;
   }
 
 }
@@ -36,5 +51,15 @@
     font-size: 1.2rem;
     text-decoration: none;
     color: $white-color;
+    font-weight: bold;
   }
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.842) 85%, rgba(75, 75, 77, 0.877));
 }

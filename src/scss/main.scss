@@ -1,7 +1,8 @@
 @import "_normalize";
 @import "_variables";
+@import "_keyframes";
 @import "_header";
-
+@import "_cities";
 
 html {
   box-sizing: border-box;
@@ -12,5 +13,5 @@ html {
 }
 
 body{
-  background-color: black;
+  font-family: 'Ubuntu', sans-serif;
 }

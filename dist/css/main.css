@@ -307,17 +307,39 @@ template {
 [hidden] {
   display: none; }
 
+@-webkit-keyframes changePhoto {
+  0% {
+    background: url(../assets/img/bg2.jpg) no-repeat center center/cover; }
+  30% {
+    background: url(../assets/img/bg3.jpg) no-repeat center center/cover; } }
+
+@keyframes changePhoto {
+  0% {
+    background: url(../assets/img/bg2.jpg) no-repeat center center/cover; }
+  30% {
+    background: url(../assets/img/bg3.jpg) no-repeat center center/cover; } }
+
 .header {
   height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.85))), url(../assets/img/bg1.jpg) no-repeat center center/cover;
-  background: linear-gradient(rgba(0, 0, 0, 0.85)), url(../assets/img/bg1.jpg) no-repeat center center/cover;
-  position: relative; }
+  background: url(../assets/img/bg1.jpg) no-repeat center center/cover;
+  position: relative;
+  color: #fff;
+  animation: changePhoto 12s ease-in-out infinite alternate-reverse forwards; }
   .header__box {
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%); }
+            transform: translate(-50%, -50%);
+    text-align: center; }
+  .header__heading {
+    font-size: 3rem; }
+    .header__heading--special {
+      color: #C81918; }
+  .header__text {
+    font-size: 1.4rem;
+    color: #706d6d;
+    font-style: italic; }
 
 .navigation {
   margin: 0 auto;
@@ -348,7 +370,17 @@ template {
     display: block;
     font-size: 1.2rem;
     text-decoration: none;
-    color: #fff; }
+    color: #fff;
+    font-weight: bold; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(85%, rgba(0, 0, 0, 0.842)), to(rgba(75, 75, 77, 0.877)));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.842) 85%, rgba(75, 75, 77, 0.877)); }
 
 html {
   -webkit-box-sizing: border-box;
@@ -359,6 +391,6 @@ html {
           box-sizing: inherit; }
 
 body {
-  background-color: black; }
+  font-family: 'Ubuntu', sans-serif; }
 
 /*# sourceMappingURL=main.css.map */
