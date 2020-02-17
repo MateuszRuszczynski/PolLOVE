@@ -3,6 +3,7 @@
 @import "_keyframes";
 @import "_header";
 @import "_cities";
+@import "_facts";
 
 html {
   box-sizing: border-box;
@@ -10,8 +11,11 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body{
   font-family: 'Ubuntu', sans-serif;
+  counter-reset: section;
 }

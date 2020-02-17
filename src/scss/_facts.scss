@@ -1,0 +1,60 @@
+.facts{
+  position: relative;
+  z-index: -10;
+  background-color: $bg2-color;
+  padding: 3rem 0 6rem;
+  &__heading{
+    margin: 0 0 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: $white-color;
+  }
+}
+
+.article{
+  padding: 0 10rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: $white-color;
+  &:not(:last-child){
+    margin-bottom: 8rem;
+  }
+  
+  &:nth-child(odd) &__box{
+    grid-column: 1;
+  }
+  &:nth-child(even) &__box{
+    grid-column: 2;
+  }
+  &:nth-child(odd) &__box::before {
+    right: -40px;
+  }
+
+  &:nth-child(even) &__box::before {
+    left: -100px;
+  }
+  &__box{
+    position: relative;
+    &::before{
+      counter-increment: section;
+      z-index: -1;
+      font-weight: bold;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 20rem;
+      content: counter(section);
+      color: #8C8C8C;
+      opacity: .3;
+    }
+  }
+  &__heading{
+    font-size: 2rem;
+    margin: 0;
+  }
+  &__text{
+    font-size: 1.4rem;
+    color: $white-color;
+    line-height: 1.3;
+  }
+}
