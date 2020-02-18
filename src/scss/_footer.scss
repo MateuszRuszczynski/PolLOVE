@@ -30,7 +30,7 @@
     background: none;
     border: none;
     border-bottom: solid 2px $footer-item-color;
-    color: #474544;
+    color: $white-color;
     font-size: 1rem;
     font-weight: 400;
     letter-spacing: 1px;
@@ -38,7 +38,6 @@
     padding: 1rem 0;
     text-transform: uppercase;
     width: 100%;
-  width: 100%;
   &--name{
     flex-basis: 50%;
     &:not(:last-child){
@@ -64,7 +63,7 @@
 }
 
 .banner{
-  padding: 3rem 1rem;
+  padding: 3rem .5rem;
   text-align: center;
   &__text{
     background: url(../assets/img/banner.jpg);
