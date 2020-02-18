@@ -2,24 +2,39 @@
   position: relative;
   z-index: -10;
   background-color: $bg2-color;
-  padding: 3rem 0 6rem;
+  padding: 3rem 6rem;
+  @media (max-width: 450px){
+    padding: 3rem 1rem;
+  }
   &__heading{
     margin: 0 0 5rem;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
     color: $white-color;
+    @media (max-width: 450px){
+      margin: 0 0 3rem;
+    }
   }
 }
 
 .article{
-  padding: 0 10rem;
+  padding: 0 4rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   color: $white-color;
+  @media (max-width: 850px){
+    grid-template-columns: 1fr;
+  }
+  @media (max-width: 450px){
+    padding: 0;
+  }
   &:not(:last-child){
     margin-bottom: 8rem;
+    @media (max-width: 450px){
+      margin-bottom: 3rem;
+    }
   }
-  
   &:nth-child(odd) &__box{
     grid-column: 1;
   }
@@ -27,11 +42,14 @@
     grid-column: 2;
   }
   &:nth-child(odd) &__box::before {
-    right: -40px;
+    right: 0;
   }
 
   &:nth-child(even) &__box::before {
     left: -100px;
+    @media (max-width: 850px){
+      left: 0;
+    }
   }
   &__box{
     position: relative;
@@ -49,11 +67,11 @@
     }
   }
   &__heading{
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin: 0;
   }
   &__text{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: $white-color;
     line-height: 1.3;
   }
