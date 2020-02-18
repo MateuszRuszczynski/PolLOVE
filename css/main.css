@@ -428,10 +428,10 @@ template {
         position: absolute;
         padding: 0;
         margin: 0;
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: rgba(0, 0, 0, 0.95);
         right: 0;
         top: 0;
-        width: 300px;
+        width: 100%;
         height: 100%;
         z-index: 2;
         -webkit-transform: translateX(300px);
@@ -774,14 +774,13 @@ template {
     background: none;
     border: none;
     border-bottom: solid 2px #6D7079;
-    color: #474544;
+    color: #fff;
     font-size: 1rem;
     font-weight: 400;
     letter-spacing: 1px;
     margin: 0 0 2rem;
     padding: 1rem 0;
     text-transform: uppercase;
-    width: 100%;
     width: 100%; }
     .contact__item--name {
       -ms-flex-preferred-size: 50%;
@@ -804,7 +803,7 @@ template {
         background-color: #3d3e43; }
 
 .banner {
-  padding: 3rem 1rem;
+  padding: 3rem .5rem;
   text-align: center; }
   .banner__text {
     background: url(../assets/img/banner.jpg);
