@@ -52,3 +52,18 @@
   }
   }
 }
+
+.banner{
+  padding: 3rem 1rem;
+  text-align: center;
+  &__text{
+    background: url(../assets/img/banner.jpg);
+    background-attachment: fixed;
+    font-size: 22vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0;
+  }
+}

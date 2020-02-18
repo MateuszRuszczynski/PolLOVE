@@ -600,6 +600,20 @@ template {
       font-weight: bold;
       cursor: pointer; }
 
+.banner {
+  padding: 3rem 1rem;
+  text-align: center; }
+  .banner__text {
+    background: url(../assets/img/banner.jpg);
+    background-attachment: fixed;
+    font-size: 22vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+            background-clip: text;
+    margin: 0; }
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
