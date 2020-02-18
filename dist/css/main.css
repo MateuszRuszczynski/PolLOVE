@@ -522,7 +522,9 @@ template {
     width: 80%;
     text-align: center;
     border-radius: 20px;
-    color: #0388A6; }
+    color: #0388A6;
+    -webkit-box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1); }
 
 .grid {
   display: grid;
@@ -537,6 +539,66 @@ template {
 
 .hotels__item.active {
   background-color: #706d6d; }
+
+.footer {
+  background-color: #313744;
+  padding: 3rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: uppercase; }
+
+.contact {
+  width: 100%;
+  max-width: 800px; }
+  .contact__heading {
+    margin-top: 0;
+    text-align: center;
+    color: #6D7079;
+    font-size: 2rem;
+    letter-spacing: .2rem;
+    margin-bottom: 3rem; }
+  .contact__name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .contact__item {
+    background: none;
+    border: none;
+    border-bottom: solid 2px #6D7079;
+    color: #474544;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0 0 2rem;
+    padding: 1rem 0;
+    text-transform: uppercase;
+    width: 100%;
+    width: 100%; }
+    .contact__item--name {
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%; }
+      .contact__item--name:not(:last-child) {
+        margin-right: 2rem; }
+    .contact__item--btn {
+      width: 200px;
+      background: none;
+      border: solid 2px #6D7079;
+      color: #6D7079;
+      font-weight: bold;
+      cursor: pointer; }
 
 html {
   -webkit-box-sizing: border-box;

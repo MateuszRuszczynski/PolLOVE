@@ -23,9 +23,9 @@
         </a>
         <ul class="navigation__list">
           <li class="navigation__item"><a href="" class="navigation__link">Przewodnik</a></li>
-          <li class="navigation__item"><a href="" class="navigation__link">Podróz</a></li>
+          <li class="navigation__item"><a href="" class="navigation__link">Ciekawostki</a></li>
           <li class="navigation__item"><a href="" class="navigation__link">Hotele</a></li>
-          <li class="navigation__item"><a href="" class="navigation__link">Restauracje</a></li>
+          <li class="navigation__item"><a href="" class="navigation__link">Kontakt</a></li>
           <li class="navigation__item"><a href="" class="navigation__link"><i class="fas fa-search-location"></i></a>
           </li>
         </ul>
@@ -121,7 +121,7 @@
   <section class="hotels">
     <h2 class="hotels__heading">Rekomendowane hotele</h2>
     <ul class="hotels__list">
-      <li class="hotels__item" data-tab='#warszawa'>Warszawa</li>
+      <li class="hotels__item active" data-tab='#warszawa'>Warszawa</li>
       <li class="hotels__item" data-tab='#poznan'>Poznań</li>
       <li class="hotels__item" data-tab='#wroclaw'>Wrocław</li>
       <li class="hotels__item" data-tab='#zakopane'>Zakopane</li>
@@ -278,6 +278,32 @@
         <a href="#" class="hotel__link">Zobacz więcej</a>
       </section>
     </div>
+  </section>
+  <footer class="footer">
+    <form action="" class="contact">
+      <h2 class="contact__heading">Napisz widomość do nas</h2>
+      <p class="contact__name">
+        <label for="name"></label>
+        <input class="contact__item contact__item--name" type="text" placeholder="Imię" name="name" required>
+        <label for="surname"></label>
+        <input class="contact__item contact__item--name" type="text" placeholder="Nazwisko" name="surname" required>
+      </p>
+      <p class="contact__email">
+        <label for="email"></label>
+        <input class="contact__item" type="email" name="email" required placeholder="Adres email">
+      </p>
+      <p class="contact__message">
+        <label for="message"></label>
+        <textarea class="contact__item" name="message" cols="30" rows="5" placeholder="Treść wiadomośći"
+          required></textarea>
+      </p>
+      <p class="contact__send">
+        <input class="contact__item contact__item--btn" type="submit" value="Wyślij wiadomość">
+      </p>
+    </form>
+  </footer>
+  <section class="banner">
+    <p class="banner__text">poland</p>
   </section>
   <script src="js/jquery.js"></script>
   <script src="js/owl.carousel.js"></script>
