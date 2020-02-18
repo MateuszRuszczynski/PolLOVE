@@ -63,3 +63,54 @@
   height: 100%;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.842) 85%, rgba(75, 75, 77, 0.877));
 }
+
+.hamburger{
+  padding: 10px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  &__box{
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+  }
+  &__inner{
+    width: 100%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 3px;
+    background-color: $white-color;
+    position: absolute;
+    &::before, &::after{
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: $white-color;
+    }
+    &::before{
+      top: -10px;
+    }
+    &::after{
+      top: 10px;
+    }
+  }
+}
+
+.hamburger--active .hamburger__inner{
+  background-color: transparent;
+}
+
+.hamburger--active .hamburger__inner::before{
+  transform: rotate(45deg);
+}
+
+.hamburger--active .hamburger__inner::after{
+  transform: rotate(-45deg);
+}
+
