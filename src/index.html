@@ -22,10 +22,10 @@
           <img src="assets/img/logo.png" alt="logo" class="navigation__img">
         </a>
         <ul class="navigation__list">
-          <li class="navigation__item"><a href="" class="navigation__link">Przewodnik</a></li>
-          <li class="navigation__item"><a href="" class="navigation__link">Ciekawostki</a></li>
-          <li class="navigation__item"><a href="" class="navigation__link">Hotele</a></li>
-          <li class="navigation__item"><a href="" class="navigation__link">Kontakt</a></li>
+          <li class="navigation__item"><a href="#przewodnik" class="navigation__link">Przewodnik</a></li>
+          <li class="navigation__item"><a href="#ciekawostki" class="navigation__link">Ciekawostki</a></li>
+          <li class="navigation__item"><a href="#hotele" class="navigation__link">Hotele</a></li>
+          <li class="navigation__item"><a href="#kontakt" class="navigation__link">Kontakt</a></li>
         </ul>
         <button class="hamburger">
           <span class="hamburger__box">
@@ -39,7 +39,7 @@
       </div>
     </div>
   </header>
-  <section class="cities">
+  <section class="cities" id="przewodnik">
     <h2 class="cities__heading">Popularne miesjca, które warto odwiedzić</h2>
     <div class="owl-carousel owl-theme">
       <div class="item">
@@ -79,8 +79,15 @@
         </div>
       </div>
   </section>
-  <section class="facts">
+  <section class="facts" id="ciekawostki">
     <h2 class="facts__heading">5 ciekawostek o Polsce</h2>
+    <article class="article">
+      <div class="article__box">
+        <h3 class="article__heading">Znikający półwysep</h3>
+        <p class="article__text">Według niektórych naukowców półwysep Helski może zniknąć. W ciągu od kilkudziesięciu do
+          kilkuset lat połączy się z resztą kraju.</p>
+      </div>
+    </article>
     <article class="article">
       <div class="article__box">
         <h3 class="article__heading">Radom jest większy niż Paryż</h3>
@@ -91,18 +98,10 @@
     </article>
     <article class="article">
       <div class="article__box">
-        <h3 class="article__heading">Znikający półwysep</h3>
-        <p class="article__text">Według niektórych naukowców półwysep Helski może zniknąć. W ciągu od kilkudziesięciu do
-          kilkuset lat połączy się z resztą kraju.</p>
-      </div>
-    </article>
-    <article class="article">
-      <div class="article__box">
         <h3 class="article__heading">Dzień Polaka narodowym świętem... Argentyny!</h3>
         <p class="article__text">Argentyna to jedyny kraj na świecie, gdzie co roku, 8 czerwca obchodzi się Dzień
-          Polaka. "Día del Colono Polaco", czyli Dzień Polskiego Osadnika został ustanowiony w 1995 roku. To święto
-          narodowe, które upamiętnia przybycie pierwszych Polaków do Argentyny. Wydarzenie to datuje się na początek
-          czerwca 1897 roku.</p>
+          Polaka. To święto
+          narodowe, które upamiętnia przybycie pierwszych Polaków do Argentyny.</p>
       </div>
     </article>
     <article class="article">
@@ -121,7 +120,7 @@
       </div>
     </article>
   </section>
-  <section class="hotels">
+  <section class="hotels" id="hotele">
     <h2 class="hotels__heading">Rekomendowane hotele</h2>
     <ul class="hotels__list">
       <li class="hotels__item active" data-tab='#warszawa'>Warszawa</li>
@@ -282,7 +281,7 @@
       </section>
     </div>
   </section>
-  <footer class="footer">
+  <footer class="footer" id="kontakt">
     <form action="" class="contact">
       <h2 class="contact__heading">Napisz widomość do nas</h2>
       <p class="contact__name">
