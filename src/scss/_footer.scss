@@ -66,8 +66,7 @@
   padding: 3rem .5rem;
   text-align: center;
   &__text{
-    background: url(../assets/img/banner.jpg);
-    background-attachment: fixed;
+    background: url(../assets/img/banner.jpg) no-repeat center center/cover;
     font-size: 22vw;
     font-weight: bold;
     text-transform: uppercase;

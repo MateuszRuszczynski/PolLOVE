@@ -1,9 +1,11 @@
-# wtf-gulp-starter
+![banner](src/assets/img/readme.png)
 
-`npm install -g gulp-cli`
+# Narzędzia i technologie:
 
-`npm install`
-
-`gulp`
-
-To publish your page using github pages use `npm run deploy`
+- Visual Studio Code
+- HTML
+- SASS
+- Java script
+- Css grid, flexbox
+- Gulp
+- Npm
